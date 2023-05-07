@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fee8f4;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+output {
+  display: inline-block;
+}
+
+.header {
+  padding-inline: 0;
+  .col-sm-12 {
+    padding: 0;
+  }
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 480px;
+    background: #fff url('../assets/images/banner-image.jpg') no-repeat center/cover;
+  }
+}
+.card {
+  margin: 0 auto;
+  &-img-top {
+    height: 160px;
+    object-fit: cover;
+  }
+}
+.img-filed {
+  height: 100%;
+  object-fit: cover;
+}
